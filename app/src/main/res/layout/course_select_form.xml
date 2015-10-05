@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    		  xmlns:font="http://schemas.android.com/apk/res/edu.uma.umasimple"
+    android:id="@+id/courseSelectContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+<LinearLayout
+    android:id="@+id/CourseSelectSubContainer"
+    android:layout_width="match_parent"
+    android:layout_height="415dp"
+    android:orientation="vertical"
+     >  
+<LinearLayout
+    android:id="@+id/CourseSelectSubContainer1"
+    android:layout_width="match_parent"
+    android:layout_height="365dp"
+    android:background="@drawable/loginbackground"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="15dp" >
+<edu.uma.umasimple.TVCustomFont
+   font:TVCustomFont="fonts/OpenSans-Regular.ttf"
+   android:id="@+id/textView1"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:gravity="center"
+   android:text="@string/courseselection"
+   android:textColor="@color/white"
+   android:textSize="25sp" />
+
+<Button
+ android:id="@+id/select_semester"
+ android:padding="8dp"
+ android:layout_width="match_parent"
+ android:background="@drawable/search_bar"
+ android:drawablePadding="10dp"
+ android:drawableRight="@drawable/arrow"
+ android:maxLines="1"
+ android:hint="@string/semester"
+ android:textSize="15sp"
+ android:layout_height="45dp" />
+<View
+   android:id="@+id/courseSelectSpacer"
+   android:layout_width="fill_parent"
+   android:layout_height="10dp"
+   android:visibility="visible" />
+<View
+   android:id="@+id/courseSelectSeparator"
+   android:layout_width="fill_parent"
+   android:layout_height="2dp"
+   android:background="@color/white"
+   android:visibility="visible" />
+<View
+   android:id="@+id/courseSelectSpacer2"
+   android:layout_width="fill_parent"
+   android:layout_height="20dp"
+   android:visibility="visible" />
+  <EditText
+   android:id="@+id/txtv_search_bar"
+   android:layout_width="match_parent"
+   android:background="@drawable/search_bar"
+   android:gravity="center"
+   android:hint="@string/search" 
+   android:layout_height="48dp"/>
+   <View
+   android:id="@+id/courseSelectSpacer3"
+   android:layout_width="fill_parent"
+   android:layout_height="15dp"
+   android:visibility="visible" />
+   		<LinearLayout
+		    android:id="@+id/seperatorWrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="65dp"
+		    android:orientation="vertical"
+			android:padding="7dp"			
+		     >
+	       <View
+		        android:id="@+id/courseSelectSeparator1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="2dp"
+		        android:background="@color/white"
+		        android:visibility="visible" />
+
+
+			       <edu.uma.umasimple.TVCustomFont
+    				   font:TVCustomFont="fonts/OpenSans-Regular.ttf"
+			           android:id="@+id/or"
+			           android:layout_width="fill_parent"
+			           android:layout_height="wrap_content"
+			           android:gravity="center"
+			           android:text="@string/or"
+			           android:textColor="@color/white"
+			           android:textSize="25sp" />
+			<View
+			    android:id="@+id/courseSelectSeparator2"
+			    android:layout_width="fill_parent"
+			    android:layout_height="2dp"
+			    android:background="@color/white"
+			    android:visibility="visible" />
+
+       </LinearLayout>
+
+        <Button
+        android:id="@+id/subject"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_bar"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/arrow"
+        android:maxLines="1"
+        android:hint="@string/subject"
+        android:textSize="15sp"
+        android:layout_height="45dp" />
+        <Button
+        android:id="@+id/txtv_drop_down"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_bar"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/arrow"
+        android:maxLines="1"
+        android:hint="@string/course"
+        android:textSize="15sp"
+        android:layout_height="45dp" />
+</LinearLayout>
+<RelativeLayout
+   android:id="@+id/CourseSelectSubContainer2"
+   android:layout_width="match_parent"
+   android:layout_height="0dp"
+   android:orientation="vertical"
+   android:gravity="bottom"
+   android:layout_weight="5"
+   >
+   <edu.uma.umasimple.BtnCustomFont
+    font:BtnCustomFont="fonts/OpenSans-Regular.ttf"
+    android:id="@+id/btnGetCourses"
+    android:background = "@drawable/listview_selector"
+    android:layout_width="75dp"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp"
+    android:textColor="@color/white"
+    android:text="@string/go"
+    android:layout_centerInParent="true"
+    android:textSize="20sp"
+  
+/>
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<edu.uma.umasimple.ExtendedCalendarView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/calendarView1"
+     android:layout_width="0dip"
+     android:layout_height="match_parent"
+     android:layout_weight="1"
+ />

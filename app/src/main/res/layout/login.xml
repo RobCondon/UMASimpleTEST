@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    		  xmlns:font="http://schemas.android.com/apk/res/edu.uma.umasimple"
+    android:id="@+id/loginContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:orientation="vertical"
+    android:id="@+id/loginSubContainer">
+<LinearLayout
+    android:id="@+id/loginSubContainer1"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@drawable/loginbackground"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <edu.uma.umasimple.TVCustomFont
+    font:TVCustomFont="fonts/OpenSans-Regular.ttf"
+    android:id="@+id/txtLogin"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:text="@string/umalogin"
+    android:textSize="20sp"
+     />
+
+	<View
+	    android:id="@+id/loginSeparator"
+	    android:layout_width="fill_parent"
+	    android:layout_height="2dp"
+	    android:background="@color/white"
+	    android:visibility="visible" />
+		<View
+	    android:id="@+id/marginTop"
+	    android:layout_width="fill_parent"
+	    android:layout_height="8dp"
+	    android:visibility="visible" />
+
+     <LinearLayout
+    android:id="@+id/usernameContainer"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="top"
+    android:orientation="horizontal"
+     >
+   <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_bar"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:hint="@string/username" 
+        android:layout_height="45dp"/>
+    <edu.uma.umasimple.TVCustomFont
+    font:TVCustomFont="fonts/OpenSans-Regular.ttf" 
+    android:id="@+id/domain"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_weight="1.5"
+    android:gravity="left"
+    android:textColor="@color/white"
+    android:text="@string/domain"
+    android:textSize="20sp"
+/>
+   </LinearLayout>
+   <View
+	    android:id="@+id/marginTop2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="8dp"
+	    android:visibility="visible" />
+   <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_bar"
+        android:gravity="center"
+        android:hint="@string/password" 
+        android:layout_height="45dp"/>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/loginBottomSpace"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+   <edu.uma.umasimple.BtnCustomFont
+    font:BtnCustomFont="fonts/OpenSans-Regular.ttf"
+    android:id="@+id/btnLogin"
+    android:background = "@drawable/listview_selector"
+    android:layout_width="75dp"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp"
+    android:textColor="@color/white"
+    android:text="@string/login"
+    android:textSize="20sp"
+	/>
+	<View
+	android:id="@+id/spacer"
+	android:layout_width="75dp"
+	android:layout_height="8dp"
+	android:visibility="visible" />
+   	<edu.uma.umasimple.BtnCustomFont
+    font:BtnCustomFont="fonts/OpenSans-Regular.ttf"
+    android:id="@+id/btnSkip"
+    android:layout_width="75dp"
+    android:layout_height="40dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/listview_selector"
+    android:gravity="center"
+    android:padding="5dp"
+    android:paddingLeft="10dp"
+    android:text="@string/skip"
+    android:textColor="@color/white"
+    android:textSize="20sp" />
+
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+    
+
